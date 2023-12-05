@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay Netflix </title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/netflix.svg" alt="logo-netflix" class="logo-img">
+        <button class="button-cima">Entrar</button>
+    
+    </header>
+
+    <div class="div-cima">
+        <h1>Os maiores sucessos do Brasil e 
+            do mundo. As melhores histórias. Tudo na 
+            Netflix.</h1>
+        <p class="first-p">Assista onde quiser. Cancele quando quiser.</p>
+        <p class="segundo-p"> Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+        <div class="formulario">
+        <input placeholder="Email">
+        <button class="button-meio" >Vamos la </button>
+    </div>
+    </div>
+
+    <div class="perguntas" >
+        <h2>Perguntas frequentes</h2>
+    
+        <button class="button-baixo">O que e a netflix <img src="./assets/fechar.svg" id="img-fechar" ></button>
+        <div id="perguntas">
+            <p class="p-baixo">A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários
+                premiados em milhares de aparelhos conectados à internet.</p>
+            <p class="p-baixo">Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal
+                acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+        </div>
+    </div>
+</body>
+
+<script>
+
+const botao = document.querySelector('.img-fechar')
+const paragrafo = document.querySelector('.p-baixo')
+const img = document.querySelector('.img-fechar')
+
+
+function rotacao (){ 
+ paragrafo.style.display  = 'block'
+}
+
+botao.addEventListener('click', rotacao )
+
+</script>
+
+</html>
